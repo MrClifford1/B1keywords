@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQA GCSE Combined Science B1 Keyword Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>B1 Cell Biology Keyword Match-Up</h1>
+
+        <div id="pause-overlay" class="overlay">
+            <div class="overlay-content">
+                <h2>Game Paused</h2>
+                <p>Take a quick break!</p>
+                <button id="continue-game-btn">Continue Game</button>
+            </div>
+        </div>
+        <div id="game-area">
+            <div class="instructions">
+                <p>Drag the keywords from the right panel and drop them onto their correct definitions.</p>
+                <button id="start-game-btn">Start Game</button>
+            </div>
+
+            <div id="game-board">
+                <div class="definitions-panel">
+                    <h2>Definitions</h2>
+                    <div id="definitions-container">
+                        </div>
+                </div>
+
+                <div class="keywords-panel">
+                    <h2>Keywords</h2>
+                    <div id="keywords-container">
+                        </div>
+                    <button id="check-answers-btn">Check Answers</button>
+                </div>
+            </div>
+
+            <div id="feedback-area">
+                <p id="game-message"></p>
+                <button id="play-again-btn">Play Again</button>
+            </div>
+        </div>
+
+        <div id="timer-area">
+            Time: <span id="timer">00:00</span>
+        </div>
+
+        <div id="scores-area">
+            <h2>Your Best Times</h2>
+            <ul id="high-scores-list">
+                </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
